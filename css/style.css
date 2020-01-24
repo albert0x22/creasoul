@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.6rem;
+	font-family: sans-serif;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #F2F1F4;
+	width: 80%;
+}
+main {
+	padding: 15px;
+}
+
+/* HEADER */
+header {
+	text-align: center;
+}
+nav {
+	background-color: #30a894;
+}
+nav a {
+	display: block;
+	padding: 30px 0;
+	text-decoration: none;
+	color: white;
+}
+
+
+/* GLOBAL */
+h1, h2 {
+	font-weight: normal;
+	color: #30a894;
+	margin: 0;
+	padding: 15px 0;
+}
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 2.4rem;
+}
+hr {
+	border: 0.5px solid #30a894;
+}
+img {
+	max-width: 100%;
+}
+p {
+	line-height: 35px;
+	color: grey;
+}
+aside {
+	display: none;
+	background-color: #b8dcb1;
+	padding: 15px 25px;
+	margin-right: 5px;
+}
+
+/* Tablette screens --- >960px --- */
+@media screen and (min-width: 960px) {
+	aside {
+		display: block;
+	}
+}
+/* Desktop screens --- >1140px --- */
+@media screen and (min-width: 1140px) {
+	
+	nav {
+		display: flex;
+		margin-right: 1%;
+	}
+	nav a {
+		padding: 30px 10%;
+	}
+	main {
+		width: 68%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	aside {
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+	}
+	main section h1 {
+		padding: 0;
+	}
+}
+
+/* FOOTER */
+footer div {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+footer div img {
+    width: 50px;
+}
